@@ -1,14 +1,19 @@
 body{
     margin:0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(blue, green);
+    min-height: 100vh;
 }
 
-.container{
-    width: 80%;
+/*Nav-bar*/
+
+.Container{
+    width: 90%;
     margin:0 auto;
 }
+
 header{
-    background-color: rgb(141, 19, 19);
+    background: linear-gradient(to right, rgb(150, 15, 15), rgb(247, 0, 0),rgb(150, 15, 15));
 }
 
 header::after{
@@ -16,38 +21,64 @@ header::after{
     display: table;
     clear:both;
 }
-#LOGO
+
+.LOGO
 {
-    
+    color:black;
+    float: left;
+    margin:0;
+    font-size: 40px;
+    background-color: aqua;
+    text-decoration: none;
 }
 
 nav{
-    float:right;
-}
+    display: flex;
+    background-color: white;
+    width: 13%;
 
+}
 nav ul{
-    margin: 0;
-    padding:0;
+    display: flex;
+    margin-top: 0px;
+    padding:0;    
     list-style: none;
+    margin: 0 auto;
 }
 
 nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: -5px;
-
+    margin-left:10px;
+    position:relative;
+    float:left;
 }
+
 
 nav a
 {
-    color:rgb(141, 19, 19);
-    text-shadow: 1px 0px 2px black;
+    color:black;
+    /* text-shadow: 1px 0px 2px black; */
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
 }
 nav a:hover
 {
     color: #f80303;
-    font-size: 21px;
+    font-size: 16px;
+}
+
+nav a::before{
+    content:'';
+    display: block;
+    height:5px;
+    background-color: #444;
+    position: absolute;
+    top:0;
+    width: 0%;
+    transition: all ease-in-out 220ms;
+}
+
+nav a:hover::before{
+    width:100%;
 }
