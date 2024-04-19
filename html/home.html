@@ -5,22 +5,87 @@
 <head>
   <title>Car-Sale: Home</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../carstyle.css">
 </head>
 
 <body>
+  <!-- NAVBAR -->
+
   <header>
-    <div class="Container">
-      <h2 class="LOGO"><a href="./home.html">HOME</pa></h2>
+    <div class="navbar">
+      <h2 class="LOGO"><a href="./home.html" class="LOGO"><span class="LOGO_C"><i>C</span>ar Sale</i></a></h2>
+      <form action="./search.html" method="get" class="Search_form">
+        <input type="text" class="Search_input" name="search" placeholder="Search for cars">
+        <button type="submit" class="Search_button">Search</button>
+      </form>
       <nav>
-        <ul class="navbar">
-   
-          <li><a href="./contact.html" target="_top">Contact</a></li>
-          <li><a href="" target="_top">About</a></li>
-          <li class="LoginButton"><a href="./login.html" target="_top">Login</a></li>
+        <ul class="navbar_ul">
+          <li class="navbar_li"><a href="./contact.html" target="_top">Contact</a></li>
+          <li class="navbar_li"><a href="./about.html" target="_top">About</a></li>
+          <li class="navbar_li"><a href="./login.html" target="_top">Login</a></li>
         </ul>
       </nav>
     </div>
+  
   </header>
+  <div class="asphalt_black">
+  </div>
+  <div id="asphalt_white">
+  </div>
+  <div class="asphalt_black">
+  </div>
+
+<!-- CAR SECTIONS -->
+
+  <section class="allcars_section">
+    <article class="car_box">
+      <div class="car_infobox">
+        <h2>Mercedes-Benz AMG</h2>
+        <div class="anunt">
+          <div>
+            <img
+              src="https://s1.cdn.autoevolution.com/images/gallery/MERCEDES-BENZ-C-63-AMG-Coupe-Black-Series-5184_10.jpg"
+              alt="Car Image" class="car_img"></p>
+          </div>
+          <div class="car_specs">
+            <ul class="car_info_ul">
+              <li class="car_info_li">Year: 2000</li>
+              <li class="car_info_li">Mileage: 100000</li>
+              <li class="car_info_li">Fuel: Gasoline</li>
+              <li class="car_info_li">Transmission: Automatic</li>
+              <li class="car_info_li">Engine: 1.6L</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="car_price">2000 euro</h2>
+      </div>
+    </article>
+
+    <article class="car_box">
+      <div class="car_infobox">
+        <h2>BMW M3 Competition xDrive AT</h2>
+        <div class="anunt">
+          <div>
+            <img src="https://cdn.motor1.com/images/mgl/1ZQrxK/s3/2023-bmw-m3-cs-first-drive-review.jpg" alt="Car Image"
+              class="car_img">
+          </div>
+          <div class="car_specs">
+            <ul class="car_info_ul">
+              <li class="car_info_li">Year: 2000</li>
+              <li class="car_info_li">Mileage: 100000</li>
+              <li class="car_info_li">Fuel: Gasoline</li>
+              <li class="car_info_li">Transmission: Automatic</li>
+              <li class="car_info_li">Engine: 1.6L</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="car_price">2000 euro</h2>
+      </div>
+    </article>
+  </section>
+
+
+
 
 </body>
 

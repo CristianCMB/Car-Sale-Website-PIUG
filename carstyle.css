@@ -1,0 +1,64 @@
+.allcars_section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin:3% 5%;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    border: 5px solid black;
+}
+
+.car_box{
+    margin:5% 10px;
+    width: 40%;
+    background:rgba(74, 110, 139, 0.918);
+    border:3px solid black;
+    border-radius: 10px;
+    margin-left: 3%;
+}
+.car_box:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.car_infobox
+{
+    size: 80%;
+    margin:0px;
+}
+
+.anunt
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight:550;
+    margin:0px;
+}
+
+.car_img
+{
+    width:260px;
+    border-radius: 10%;
+    border:2px solid gray;
+    margin: 0px 10px;
+}
+.car_info_ul
+{
+    padding-left:2px;
+}
+
+.car_box h2
+{
+    margin: 5px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.car_price{
+    color:rgb(25, 170, 102);
+    font-size: 40px;
+    margin:0px;
+}
