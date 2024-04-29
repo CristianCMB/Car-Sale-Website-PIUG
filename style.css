@@ -13,6 +13,7 @@ body{
 /*Nav-bar*/
 
 .navbar{
+    position: fixed;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;

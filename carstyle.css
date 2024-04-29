@@ -16,6 +16,7 @@
     border:3px solid black;
     border-radius: 10px;
     margin-left: 3%;
+    position: relative;
 }
 .car_box:hover{
     transform: scale(1.1);
@@ -32,9 +33,10 @@
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     font-weight:550;
     margin:0px;
+    
 }
 
 .car_img
@@ -43,16 +45,19 @@
     border-radius: 10%;
     border:2px solid gray;
     margin: 0px 10px;
+    
 }
 .car_info_ul
 {
     padding-left:2px;
+    
 }
 
 .car_box h2
 {
     margin: 5px;
     text-align: center;
+    
     /* display: flex;
     justify-content: center; */
 }
@@ -61,4 +66,5 @@
     color:rgb(25, 170, 102);
     font-size: 40px;
     margin:0px;
+    background-color: red;
 }
