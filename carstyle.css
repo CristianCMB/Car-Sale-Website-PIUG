@@ -18,10 +18,10 @@
     margin-left: 3%;
     position: relative;
 }
-.car_box:hover{
+/* .car_box:hover{
     transform: scale(1.1);
     transition: all 0.5s;
-}
+} */
 
 .car_infobox
 {
@@ -36,15 +36,18 @@
     justify-content:space-around;
     font-weight:550;
     margin:0px;
+    height: 12%;
     
 }
 
 .car_img
 {
     width:260px;
+    height: 200px;
     border-radius: 10%;
     border:2px solid gray;
     margin: 0px 10px;
+    object-fit: cover;
     
 }
 .car_info_ul
@@ -63,8 +66,12 @@
 }
 
 .car_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     color:rgb(25, 170, 102);
     font-size: 40px;
     margin:0px;
-    background-color: red;
+    
 }
