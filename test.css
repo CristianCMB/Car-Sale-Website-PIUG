@@ -1,3 +1,37 @@
+body{
+    margin:0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; 
+    background: url("https://media.istockphoto.com/id/1280649926/video/abstract-soft-shiny-background-business-motion-graphics-abstract-simple-beatiful-motion.jpg?s=640x640&k=20&c=JvWt3KjeQlt5jD_Q-PZeBdcRJORHtgLKSM-RfPtaYpM=");
+    background-size: cover;
+}
+#aboutimg{
+    background-image: url("https://media.licdn.com/dms/image/D5622AQEFNyNaroGFwg/feedshare-shrink_2048_1536/0/1706973999989?e=2147483647&v=beta&t=TurfheGqEVaxFPoqic0b_6pyznCLCk5a7NGBIIeE9kg");
+    background-size: cover;
+}
+
+/*Nav-bar*/
+
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin:0 auto;
+    background: url(https://media4.giphy.com/media/NbhtAcpwFlHuRRLcYX/200.gif?cid=6c09b9520zfmdu9bpn802a3dwpult7ps46v7i288luy6smyr&ep=v1_internal_gif_by_id&rid=200.gif&ct=s) no-repeat center;
+    background-size: 30%;
+}
+
+header{
+    background-color: rgba(53, 29, 29, 0.1);
+}
+
+header::after{
+    content:'';
+    display: table;
+    clear:both;
+}
+
 .LOGO
 {
     float: left;
@@ -5,29 +39,154 @@
     font-size: 40px;
     text-decoration: none;
     color:black;
-    z-index:1;
+    text-shadow: rgb(80, 75, 78) -3px -2px 6px;
 }
-
 .LOGO_C{
-    border-radius: 40%;
-background-color: red;
-margin-right: 2px;
-z-index: 1;
+    color:rgba(13, 84, 143,0.6);
+text-shadow: -3px -2px 6px (80, 75, 78);
 }
 
-.LOGO_C::before{
-    content: " ";
+.Search_form{
+    display:flex;
+    align-items: center;
+    width: 22%;
+}
+
+.Search_input
+{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    background-color: rgba(133, 133, 133, 0.5);
+    border: none;
+    border-radius: 0 40% 40% 0;
+    height: 45%;
+    width: 70%;
+    padding:0;
+    outline: none;
+}
+.Search_button
+{
+    font-weight: bold;
+    height:40%;
+    width:20%;
+    padding:0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+nav .navbar_ul{
+    display: flex;
+    margin:0;
+    list-style: none;
+    padding: 0px; /*navbar left padding bug */
+
+}
+
+nav .navbar_li{
+    display: flex;
+    padding-top: 9%;
+    position:relative;
+}
+
+nav .navbar_li:not(:last-child){
+    margin-right:30px;
+}
+
+
+nav a
+{
+    color:black;
+    /* text-shadow: 1px 0px 2px black; */
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover
+{
+
+    font-size: 16px;
+}
+
+nav a::before{
+    content:'';
+    display: block;
+    height:5px;
+    background-color: #444;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    z-index: -1;
-    animation: spin 2s;
+    top:0;
+    width: 0%;
+    transition: all ease-in-out 220ms;
 }
 
-keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+nav a:hover::before{
+    width:100%;
 }
+
+
+.asphalt_black
+{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    opacity: 20%;
+}
+#asphalt_white{
+    height: 1px;
+    width: 100%;
+    background: repeating-linear-gradient(to right, black, black 10px, white 10px, white 20px);
+    opacity: 20%;
+}
+/*Main Section*/
+
+
+li{
+    list-style: none;
+}
+
+/* Login page */
+
+/* #body-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box .input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255 ,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    text-align: center;
+} */
