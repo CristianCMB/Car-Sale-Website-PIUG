@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Car-Sale: Login</title>
-        <link rel="stylesheet" href="../style.css">
-      </head>
-      
-      <body>
-        <!-- NAVBAR -->
-      
-        <header>
-          <div class="navbar">
-            <h2 class="LOGO"><a href="./home.html" class="LOGO"><span class="LOGO_C"><i>C</span>ar Sale</i></a></h2>
-            <form action="./search.html" method="get" class="Search_form">
-              <input type="text" class="Search_input" name="search" placeholder="Search for cars">
-              <button type="submit" class="Search_button">Search</button>
-            </form>
-            <nav>
-              <ul class="navbar_ul">
-                <li class="navbar_li"><a href="./contact.html" target="_top">Contact</a></li>
-                <li class="navbar_li"><a href="./about.html" target="_top">About</a></li>
-                <li class="navbar_li"><a href="./login.html" target="_top">Login</a></li>
-              </ul>
-            </nav>
-          </div>
-        
-        </header>
-        <div class="asphalt_black">
-        </div>
-        <div id="asphalt_white">
-        </div>
-        <div class="asphalt_black">
-        </div>
 
-<!-- Login Section -->
+<head>
+  <title>Car-Sale: Login</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
 
-<div class="wrapper">
-    <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="email" required>
-                <Label>Email</Label>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-        </form>
+<body>
+  <!-- NAVBAR -->
+
+  <header>
+    <div class="navbar">
+      <h2 class="LOGO"><a href="./home.html" class="LOGO"><span class="LOGO_C"><i>C</span>ar Sale</i></a></h2>
+      <form action="./search.html" method="get" class="Search_form">
+        <input type="text" class="Search_input" name="search" placeholder="Search for cars">
+        <button type="submit" class="Search_button">Search</button>
+      </form>
+      <nav>
+        <ul class="navbar_ul">
+          <li class="navbar_li"><a href="./contact.html" target="_top">Contact</a></li>
+          <li class="navbar_li"><a href="./about.html" target="_top">About</a></li>
+          <li class="navbar_li"><a href="./login.html" target="_top">Login</a></li>
+        </ul>
+      </nav>
     </div>
 
+  </header>
+  <div class="asphalt_black">
+  </div>
+  <div id="asphalt_white">
+  </div>
+  <div class="asphalt_black">
+  </div>
 
-</div>
+  <!-- Login Section -->
+
+  <div id="body-login">
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="email" required>
+            <Label>Email</Label>
+          </div>
+          <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't you have an account? <a href="#" class="register-link">Register</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="username" required>
+            <Label>Username</Label>
+          </div>
+          <div class="input-box">
+            <input type="email" required>
+            <Label>Email</Label>
+          </div>
+          <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Do you have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="../script.js"></script>
+</body>
 
 
 </html>
