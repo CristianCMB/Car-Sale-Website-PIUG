@@ -274,6 +274,13 @@ li{
     transform: translateX(-400px)
 }
 
+.form__message--error {
+    font-size: .8em;
+    color:red;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Register page */
 
 .wrapper .form-box.register
