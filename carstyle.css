@@ -18,10 +18,10 @@
     margin-left: 3%;
     position: relative;
 }
-/* .car_box:hover{
+.car_box:hover{
     transform: scale(1.1);
     transition: all 0.5s;
-} */
+}
 
 .car_infobox
 {
