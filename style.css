@@ -143,12 +143,127 @@ nav a:hover::before{
     background: repeating-linear-gradient(to right, black, black 10px, white 10px, white 20px);
     opacity: 20%;
 }
-/*Main Section*/
-
 
 li{
     list-style: none;
 }
+
+/*Car section*/
+
+.allcars_section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin:3% 5%;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    border: 5px solid black;
+}
+
+.car_box{
+    margin:5% 10px;
+    width: 40%;
+    background:rgba(74, 110, 139, 0.918);
+    border:3px solid black;
+    border-radius: 10px;
+    margin-left: 3%;
+    position: relative;
+}
+/* .car_box:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+} */
+
+.car_infobox
+{
+    size: 80%;
+    margin:0px;
+}
+
+.anunt
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-weight:550;
+    margin:0px;
+    height: 12%;
+    
+}
+
+.car_img
+{
+    width:260px;
+    height: 200px;
+    border-radius: 10%;
+    border:2px solid gray;
+    margin: 0px 10px;
+    object-fit: cover;
+    
+}
+.car_info_ul
+{
+    padding-left:2px;
+    
+}
+.car_info_li{
+    text-decoration: none;
+    color:black
+}
+.car_box h2
+{
+    margin: 5px;
+    text-align: center;
+}
+
+.a_carbox{
+    text-decoration: none;
+}
+
+/* test zone */
+.car_popup{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:red;
+    z-index: 1000;
+}
+.car_layout{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(0,0,0, .5);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+/*  */
+
+.car_box_title
+{
+    text-decoration: none;
+    color:black;
+    border-bottom: none;
+}
+
+.car_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color:rgb(25, 170, 102);
+    font-size: 40px;
+    margin:0px;
+    
+}
+
 
 /* Login page */
 
@@ -294,4 +409,29 @@ li{
 {
    transition: transform .18s ease;
    transform: translateX(0);
+}
+
+
+/* testzone */
+#big_carbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#inside_bigbox{
+    background: transparent;
+    border: solid 4px black;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+}
+
+.carbox a{
+    text-decoration: none;
+    color: black;
 }

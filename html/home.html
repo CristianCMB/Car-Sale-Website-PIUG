@@ -5,7 +5,6 @@
 <head>
   <title>Car-Sale: Home</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../carstyle.css">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
         </ul>
       </nav>
     </div>
-  
+
   </header>
   <div class="asphalt_black">
   </div>
@@ -35,12 +34,14 @@
   <div class="asphalt_black">
   </div>
 
-<!-- CAR SECTIONS -->
+  <!-- CAR SECTIONS -->
 
-  <section class="allcars_section">
+  <section class="allcars_section" id="carBox1">
+
+
     <article class="car_box">
       <div class="car_infobox">
-        <h2>Mercedes-Benz AMG</h2>
+        <h2 class="car_box_title">Mercedes-Benz AMG</h2>
         <div class="anunt">
           <div>
             <img
@@ -59,11 +60,17 @@
         </div>
         <h2 class="car_price">2000 euro</h2>
       </div>
+      <div class="car_popup hidden">
+        <h1>test</h1>
+        <p class="close_but">close</p>
+      </div>
+      <div class="car_layout hidden"></div>
     </article>
+
 
     <article class="car_box">
       <div class="car_infobox">
-        <h2>BMW M3 Competition xDrive AT</h2>
+        <h2 class="car_box_title">BMW M3 Competition xDrive AT</h2>
         <div class="anunt">
           <div>
             <img src="https://cdn.motor1.com/images/mgl/1ZQrxK/s3/2023-bmw-m3-cs-first-drive-review.jpg" alt="Car Image"
@@ -81,60 +88,73 @@
         </div>
         <h2 class="car_price">2000 euro</h2>
       </div>
+      <div class="car_popup hidden">
+        <h1>test</h1>
+        <p class="close_but">close</p>
+      </div>
+      <div class="car_layout hidden"></div>
     </article>
-  </section>
 
-  <section class="allcars_section">
+
     <article class="car_box">
       <div class="car_infobox">
-        <h2>Mercedes-Benz AMG</h2>
+        <h2 class="car_box_title">Fiat Punto </h2>
         <div class="anunt">
           <div>
             <img
-              src="https://s1.cdn.autoevolution.com/images/gallery/MERCEDES-BENZ-C-63-AMG-Coupe-Black-Series-5184_10.jpg"
-              alt="Car Image" class="car_img"></p>
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Fiat_Punto_2012_5door_front.JPG/1200px-Fiat_Punto_2012_5door_front.JPG"
+              alt="Car Image" class="car_img">
           </div>
           <div class="car_specs">
             <ul class="car_info_ul">
-              <li class="car_info_li">Year: 2000</li>
+              <li class="car_info_li">Year: 2013</li>
               <li class="car_info_li">Mileage: 100000</li>
-              <li class="car_info_li">Fuel: Gasoline</li>
-              <li class="car_info_li">Transmission: Automatic</li>
-              <li class="car_info_li">Engine: 1.6L</li>
+              <li class="car_info_li">Fuel: Diesel</li>
+              <li class="car_info_li">Transmission: Manual</li>
+              <li class="car_info_li">Engine: 1.3L</li>
             </ul>
           </div>
         </div>
         <h2 class="car_price">2000 euro</h2>
       </div>
+      <div class="car_popup hidden">
+        <h1>test</h1>
+        <p class="close_but">close</p>
+      </div>
+      <div class="car_layout hidden"></div>
     </article>
+
 
     <article class="car_box">
       <div class="car_infobox">
-        <h2>BMW M3 Competition xDrive AT</h2>
+        <h2 class="car_box_title">Opel corsa</h2>
         <div class="anunt">
           <div>
-            <img src="https://cdn.motor1.com/images/mgl/1ZQrxK/s3/2023-bmw-m3-cs-first-drive-review.jpg" alt="Car Image"
+            <img src="https://frankfurt.apollo.olxcdn.com/v1/files/aoolg8tcrqcm-RO/image;s=2995x2033" alt="Car Image"
               class="car_img">
           </div>
           <div class="car_specs">
             <ul class="car_info_ul">
-              <li class="car_info_li">Year: 2000</li>
-              <li class="car_info_li">Mileage: 100000</li>
+              <li class="car_info_li">Year: 2007</li>
+              <li class="car_info_li">Mileage: 230000</li>
               <li class="car_info_li">Fuel: Gasoline</li>
-              <li class="car_info_li">Transmission: Automatic</li>
-              <li class="car_info_li">Engine: 1.6L</li>
+              <li class="car_info_li">Transmission: Manual</li>
+              <li class="car_info_li">Engine: 1.4L</li>
             </ul>
           </div>
         </div>
         <h2 class="car_price">2000 euro</h2>
       </div>
+      <div class="car_popup hidden">
+        <h1>test</h1>
+        <p class="close_but">close</p>
+      </div>
+      <div class="car_layout hidden"></div>
     </article>
   </section>
-  
 
 
-
-
+  <script src="../home.js"></script>
 </body>
 
 </html>
