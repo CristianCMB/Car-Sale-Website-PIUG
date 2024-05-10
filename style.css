@@ -5,10 +5,6 @@ body{
     background: url("https://media.istockphoto.com/id/1280649926/video/abstract-soft-shiny-background-business-motion-graphics-abstract-simple-beatiful-motion.jpg?s=640x640&k=20&c=JvWt3KjeQlt5jD_Q-PZeBdcRJORHtgLKSM-RfPtaYpM=");
     background-size: cover;
 }
-#aboutimg{
-    background-image: url("https://media.licdn.com/dms/image/D5622AQEFNyNaroGFwg/feedshare-shrink_2048_1536/0/1706973999989?e=2147483647&v=beta&t=TurfheGqEVaxFPoqic0b_6pyznCLCk5a7NGBIIeE9kg");
-    background-size: cover;
-}
 
 /*Nav-bar*/
 
@@ -41,6 +37,7 @@ header::after{
     color:black;
     text-shadow: rgb(80, 75, 78) -3px -2px 6px;
 }
+
 .LOGO_C{
     color:rgba(13, 84, 143,0.6);
 text-shadow: -3px -2px 6px (80, 75, 78);
@@ -65,6 +62,7 @@ text-shadow: -3px -2px 6px (80, 75, 78);
     padding:0;
     outline: none;
 }
+
 .Search_button
 {
     font-weight: bold;
@@ -85,7 +83,6 @@ nav .navbar_ul{
     margin:0;
     list-style: none;
     padding: 0px; /*navbar left padding bug */
-
 }
 
 nav .navbar_li{
@@ -98,7 +95,6 @@ nav .navbar_li:not(:last-child){
     margin-right:30px;
 }
 
-
 nav a
 {
     color:black;
@@ -108,9 +104,9 @@ nav a
     text-transform: uppercase;
     font-size: 14px;
 }
+
 nav a:hover
 {
-
     font-size: 16px;
 }
 
@@ -129,7 +125,6 @@ nav a:hover::before{
     width:100%;
 }
 
-
 .asphalt_black
 {
     height: 3px;
@@ -137,6 +132,7 @@ nav a:hover::before{
     background-color: black;
     opacity: 20%;
 }
+
 #asphalt_white{
     height: 1px;
     width: 100%;
@@ -161,6 +157,12 @@ li{
     border: 5px solid black;
 }
 
+.container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
 .car_box{
     margin:5% 10px;
     width: 40%;
@@ -170,6 +172,7 @@ li{
     margin-left: 3%;
     position: relative;
 }
+
 .car_box:hover{
     transform: scale(1.1);
     transition: all 0.5s;
@@ -189,7 +192,6 @@ li{
     font-weight:550;
     margin:0px;
     height: 12%;
-    
 }
 
 .car_img
@@ -200,7 +202,6 @@ li{
     border:2px solid gray;
     margin: 0px 10px;
     object-fit: cover;
-    
 }
 .car_info_ul
 {
@@ -221,8 +222,6 @@ li{
     text-decoration: none;
 }
 
-
-
 .car_box_title
 {
     text-decoration: none;
@@ -238,7 +237,6 @@ li{
     color:rgb(25, 170, 102);
     font-size: 40px;
     margin:0px;
-    
 }
 
 
@@ -281,7 +279,7 @@ li{
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:red;
+    background:rgba(59, 59, 59, 0.6);
     width: 80%;
     z-index: 1000;
 }
@@ -362,22 +360,125 @@ li{
   from {opacity: .4}
   to {opacity: 1}
 }
-/*  */
+/* preview infoboxes*/
 
 .popup_boxes{
     display:flex;
+    align-items: center;
     padding: 3% 2% 1% 2%;
+    
+}
+
+.popup_rightbox {
+    background:rgba(59, 59, 59, 0.8);
+    position: fixed;
+    top: 50%;
+    left: 79.5%;
+    transform: translateY(-50%);
+    align-items: center;
+    width: 20%;
+    height: 70%;
+    border-radius: 50px;
+}
+
+.popup_cartitle{
+    color: rgb(22, 162, 167);
+    font-size: 1.5em;
+    text-shadow: 2px 3px 6px rgb(121, 199, 18);
+    text-align: center;
+}
+
+.popup_right_info{
+    text-align: center;
+    color: rgb(189, 28, 28);
+    font-size: 1.2em;
+}
+
+.popup_buy_button{
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    text-align: center;
+    border:1px solid black;
+  border-radius: 50px;
+    width: 50%;
+}
+
+.popup_buy_button_text {
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  border: none;  
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+#euro{
+    color:rgb(110, 96, 96);
+    font-size: 0.6em;
+    text-shadow: 1px 1px 4px rgb(0, 255, 0);
 }
 
 .popup_leftbox{
-    background:blue;
+    background:gray;
     width: 80%;
-}
-
-.popup_rightbox{
-    background:yellow;
-    width: 20%;
-    
 }
 
 /*  */
@@ -552,3 +653,4 @@ li{
     text-decoration: none;
     color: black;
 }
+

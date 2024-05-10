@@ -1,3 +1,4 @@
+// popup infoboxes
 const infoBoxes=document.querySelectorAll('.car_infobox');
 const closeBtns=document.querySelectorAll('.close_but');
 const carPopup=document.querySelectorAll('.car_popup');
@@ -19,12 +20,10 @@ for (let i=0; i<infoBoxes.length; i++){
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
