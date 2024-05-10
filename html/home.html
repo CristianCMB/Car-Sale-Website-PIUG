@@ -39,41 +39,82 @@
   <section class="allcars_section" id="carBox1">
 
 
-    <article class="car_box">
-      <div class="car_infobox">
-        <h2 class="car_box_title">Mercedes-Benz AMG</h2>
-        <div class="anunt">
-          <div>
-            <img
-              src="https://s1.cdn.autoevolution.com/images/gallery/MERCEDES-BENZ-C-63-AMG-Coupe-Black-Series-5184_10.jpg"
-              alt="Car Image" class="car_img"></p>
+    <div class="container">
+      <article class="car_box">
+        <div class="car_infobox">
+          <h2 class="car_box_title">Mercedes-Benz AMG</h2>
+          <div class="anunt">
+            <div>
+              <img
+                src="https://s1.cdn.autoevolution.com/images/gallery/MERCEDES-BENZ-C-63-AMG-Coupe-Black-Series-5184_10.jpg"
+                alt="Car Image" class="car_img"></p>
+            </div>
+            <div class="car_specs">
+              <ul class="car_info_ul">
+                <li class="car_info_li">Year: 2000</li>
+                <li class="car_info_li">Mileage: 100000</li>
+                <li class="car_info_li">Fuel: Gasoline</li>
+                <li class="car_info_li">Transmission: Automatic</li>
+                <li class="car_info_li">Engine: 1.6L</li>
+              </ul>
+            </div>
           </div>
-          <div class="car_specs">
-            <ul class="car_info_ul">
-              <li class="car_info_li">Year: 2000</li>
-              <li class="car_info_li">Mileage: 100000</li>
-              <li class="car_info_li">Fuel: Gasoline</li>
-              <li class="car_info_li">Transmission: Automatic</li>
-              <li class="car_info_li">Engine: 1.6L</li>
-            </ul>
-          </div>
+          <h2 class="car_price">2000 euro</h2>
         </div>
-        <h2 class="car_price">2000 euro</h2>
-      </div>
+
+      </article>
       <!-- <div class="car_popup hidden"></div> -->
-      <div class="car_popup">
-        <p class="close_but">close</p>
-        <div class="popup_leftbox">
-          <h1>test</h1>
-        </div>
-        <div class="popup_rightbox">
+      <div class="car_popup hidden">
+        <span class="close_but">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="popup_boxes">
+          <div class="popup_leftbox">
 
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsM9zGnPf8uAgDAhQsVbaxppnUY8qCfbL6GGUa0cTlUA&s"
+                  style="width:100%" class="slide_image">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXN0XWCyKj2i8jNlZxcvbPW8wxwTr3haUujk8Q7AtWRw&s"
+                  style="width:100%" class="slide_image">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img
+                  src="https://s1.cdn.autoevolution.com/images/gallery/MERCEDES-BENZ-C-63-AMG-Coupe-Black-Series-5184_10.jpg"
+                  style="width:100%" class="slide_image">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <h1>test stanga</h1>
+          </div>
+          <div class="popup_rightbox">
+            <p>test dreapta</p>
+          </div>
         </div>
 
       </div>
-      <div class="car_layout "></div>
+      <div class="car_layout hidden"></div>
       <!-- <div class="car_layout hidden"></div> -->
-    </article>
+    </div>
 
 
     <article class="car_box">
@@ -163,6 +204,8 @@
 
 
   <script src="../home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
