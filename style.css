@@ -252,7 +252,7 @@ li{
     left: 50%;
     transform: translate(-50%,-50%);
     background:rgba(0,0,0, .5);
-    z-index: 999;
+    z-index: 998;
     width: 100%;
     height: 100%;
 }
@@ -281,7 +281,8 @@ li{
     transform: translate(-50%,-50%);
     background:rgba(59, 59, 59, 0.6);
     width: 80%;
-    z-index: 1000;
+    z-index: 999;
+
 }
 
 /* slides */
@@ -362,6 +363,25 @@ li{
 }
 /* preview infoboxes*/
 
+/* left infobox */
+
+
+.popup_leftbox_details_box {
+    display: flex;
+    flex-wrap: wrap;
+    background: red;
+    margin: 3% 4%;
+}
+.popup_leftbox_details{
+    display: flex;
+    justify-content: space-between;
+    background: royalblue;
+    width: 40%;
+    margin: 0.5% 9% 0.5% 0.5%;
+}
+
+
+/* right infobox */
 .popup_boxes{
     display:flex;
     align-items: center;
@@ -425,6 +445,11 @@ li{
   font-family: "Poppins", sans-serif;
   border: none;  
 }
+
+.popup_buy_button_text:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
 @-moz-keyframes shine {
   0% {
     background-position: 0;
@@ -480,8 +505,6 @@ li{
     background:gray;
     width: 80%;
 }
-
-/*  */
 
 /* Login page */
 
