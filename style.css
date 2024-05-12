@@ -279,7 +279,7 @@ li{
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:rgba(59, 59, 59, 0.6);
+    background:rgba(59, 59, 59, 0.5);
     width: 80%;
     z-index: 999;
     overflow: auto;
@@ -293,6 +293,7 @@ li{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 1vh;
 }
 
 .mySlides {
@@ -301,8 +302,10 @@ li{
 }
 
 .slide_image{
-    height: 500px;
-    object-fit:contain
+    border-radius: 5px; 
+    border: 1px rgb(184, 183, 183) solid;
+    object-fit:contain;
+    max-height: 400px;
 }
 
 .prev, .next {
@@ -333,9 +336,11 @@ li{
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 3px 5px;
   position: absolute;
   top: 0;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 50px;
 }
 
 .dot {
@@ -350,7 +355,7 @@ li{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #5e5858;
 }
 
 .fade {
@@ -364,48 +369,65 @@ li{
 }
 /* preview infoboxes*/
 
+.popup_boxes{
+    display:flex;
+    align-items: center;
+    padding: 3% 2%;
+    margin:2% 0.2%;
+    border:2px rgba(121, 119, 119, 0.9) solid;
+    border-radius: 40px;
+}
 /* left infobox */
 
+.popup_leftbox{
+    background:rgba(121, 119, 119, 0.9);
+    width: 80%;
+    border:1px solid rgb(80, 75, 75);
+    border-radius: 5px;
+}
 
 .popup_leftbox_details_box {
     display: flex;
     flex-wrap: wrap;
-    background: red;
+    background: rgba(99, 99, 99,0.1);
+    border-top: 4px double black;
+    padding-top: 2%;
     margin: 3% 4%;
 }
 
 .popup_leftbox_details{
     display: flex;
     justify-content: space-between;
-    background: royalblue;
-    width: 40%;
-    margin: 0.5% 9% 0.5% 0.5%;
+    width: 45%;
+    margin: 0.5%;
+    border-top:solid 0.5px rgb(70, 66, 66);
 }
 
 .popup_leftbox_details_other{
-    background: royalblue;
     width: 40%;
     margin: 0.5% 9% 0.5% 0.5%;
+    border-top:solid 0.5px rgb(70, 66, 66);
+}
+
+.popup_leftbox_details_general_ul, .popup_leftbox_details_gitother_ul{
+    padding-left:20px;
 }
 
 .popup_leftbox_details_li_, .popup_leftbox_details_other_li
 {
     list-style:circle;
+    font-weight: 500;  
 }
 .popup_leftbox_details_li, .popup_leftbox_details_li_, .popup_leftbox_details_other_li{
 
     margin-bottom: 0.5vh;
+    font-size: 0.9em;
+    width: 100px;
 }
 
 
 
 /* right infobox */
-.popup_boxes{
-    display:flex;
-    align-items: center;
-    padding: 3% 2% 1% 2%;
-    
-}
 
 .popup_rightbox {
     background:rgba(59, 59, 59, 0.8);
@@ -415,20 +437,21 @@ li{
     transform: translateY(-50%);
     align-items: center;
     width: 20%;
-    height: 70%;
+    height: 50%;
     border-radius: 50px;
 }
 
 .popup_cartitle{
-    color: rgb(22, 162, 167);
+    color: rgba(59, 59, 59, 0.5);
     font-size: 1.5em;
-    text-shadow: 2px 3px 6px rgb(121, 199, 18);
+    text-shadow: 2px 4px 6px rgb(226, 223, 223);
     text-align: center;
 }
 
 .popup_right_info{
     text-align: center;
-    color: rgb(189, 28, 28);
+    color: rgb(62, 128, 62);
+    text-shadow: 1px 1px 4px rgb(1, 3, 0);
     font-size: 1.2em;
 }
 
@@ -449,7 +472,7 @@ li{
 .popup_buy_button_text {
   padding: 12px 48px;
   color: #fff;
-  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background: linear-gradient(to right, #a35f0c 0, #fc9700 10%, #b60f0f 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -457,7 +480,7 @@ li{
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 19px;
   text-decoration: none;
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
@@ -517,11 +540,6 @@ li{
     color:rgb(62, 128, 62);
     font-size: 0.6em;
     /* text-shadow: 1px 1px 4px rgb(0, 255, 0); */
-}
-
-.popup_leftbox{
-    background:gray;
-    width: 80%;
 }
 
 /* Login page */
