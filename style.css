@@ -155,18 +155,19 @@ li{
     height: 90%;
     width: 90%;
     border: 5px solid black;
+    padding: 0vh 0vh 2vh 0vh;
 }
 
 .container{
     width: 40%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid gray;
 }
 
 .car_box{
     margin:5% 10px;
-    width: 40%;
-    background:rgba(74, 110, 139, 0.918);
+    background:rgba(42, 81, 97, 0.4);
     border:3px solid black;
     border-radius: 10px;
     margin-left: 3%;
@@ -182,17 +183,19 @@ li{
 {
     size: 80%;
     margin:0px;
+    width: 100%;
 }
 
 .anunt
 {
     display: flex;
     align-items: center;
-    justify-content:space-around;
     font-weight:550;
     margin:0px;
     height: 12%;
 }
+
+
 
 .car_img
 {
@@ -200,12 +203,23 @@ li{
     height: 200px;
     border-radius: 10%;
     border:2px solid gray;
-    margin: 0px 10px;
+    margin: 1.5vh 0vh 0vh 1vh;
     object-fit: cover;
 }
+
+.car_specs{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 1.4em;
+    padding-left: 1vh;
+    width: 25vh;
+}
+
 .car_info_ul
 {
     padding-left:2px;
+    margin:0px;
+    padding: 1vh 0vh;
     
 }
 .car_info_li{
@@ -234,7 +248,7 @@ li{
     justify-content: center;
     align-items: center;
     height: 50px;
-    color:rgb(25, 170, 102);
+    color:rgb(52, 160, 52);
     font-size: 40px;
     margin:0px;
 }
@@ -279,11 +293,12 @@ li{
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:rgba(59, 59, 59, 0.5);
-    width: 80%;
+    background:rgba(59, 59, 59, 0.8);
+    width: 70%;
     z-index: 999;
     overflow: auto;
     max-height: 100vh;
+    
 }
 
 /* slides */
@@ -301,7 +316,7 @@ li{
   padding: 2% 2% 0% 2%;
 }
 
-.slide_image{
+.slide_image{ 
     border-radius: 5px; 
     border: 1px rgb(184, 183, 183) solid;
     object-fit:contain;
@@ -330,7 +345,7 @@ li{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(85, 83, 83, 0.5);
 }
 
 .numbertext {
@@ -341,6 +356,8 @@ li{
   top: 0;
   border: 1px solid rgb(73, 73, 73);
   border-radius: 50px;
+  margin-top: 4vh;
+  margin-left: 1vh;
 }
 
 .dot {
@@ -374,13 +391,13 @@ li{
     align-items: center;
     padding: 3% 2%;
     margin:2% 0.2%;
-    border:2px rgba(121, 119, 119, 0.9) solid;
+    border:2px rgba(121, 119, 119, 1) solid;
     border-radius: 40px;
 }
 /* left infobox */
 
 .popup_leftbox{
-    background:rgba(121, 119, 119, 0.9);
+    background:rgba(84, 105, 112, 0.9);
     width: 80%;
     border:1px solid rgb(80, 75, 75);
     border-radius: 5px;
@@ -423,6 +440,8 @@ li{
     margin-bottom: 0.5vh;
     font-size: 0.9em;
     width: 100px;
+    font-weight: 600;
+    color:#000000;
 }
 
 
@@ -430,7 +449,7 @@ li{
 /* right infobox */
 
 .popup_rightbox {
-    background:rgba(59, 59, 59, 0.8);
+    background:rgba(53, 51, 51, 0.9);
     position: fixed;
     top: 60%;
     left: 79.5%;
@@ -442,17 +461,22 @@ li{
 }
 
 .popup_cartitle{
-    color: rgba(59, 59, 59, 0.5);
+    color: rgba(66, 62, 62, 0.6);
     font-size: 1.5em;
-    text-shadow: 2px 4px 6px rgb(226, 223, 223);
+    text-shadow: 2px 3px 2px rgb(201, 195, 195);
     text-align: center;
 }
 
 .popup_right_info{
     text-align: center;
     color: rgb(62, 128, 62);
-    text-shadow: 1px 1px 4px rgb(1, 3, 0);
+    text-shadow: 1px 1px 4px rgb(9, 20, 4);
     font-size: 1.2em;
+}
+
+#euro{
+    color:rgb(52, 160, 52);
+    font-size: 0.6em;
 }
 
 .popup_buy_button{
@@ -534,12 +558,6 @@ li{
   100% {
     background-position: 180px;
   }
-}
-
-#euro{
-    color:rgb(62, 128, 62);
-    font-size: 0.6em;
-    /* text-shadow: 1px 1px 4px rgb(0, 255, 0); */
 }
 
 /* Login page */
@@ -689,27 +707,23 @@ li{
 }
 
 
-/* testzone */
-#big_carbox{
+/* About page */
+
+.about_title
+{
+    text-align: center;
+    font-size: 2em;
+    color: #162938;
+    font-weight: 600;
+    margin: 2vh 0;
+}
+
+.about_info
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 2vh 0;
+    padding-left: 10px;
+    text-align:justify;
 }
-
-
-#inside_bigbox{
-    background: transparent;
-    border: solid 4px black;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200%;
-}
-
-.carbox a{
-    text-decoration: none;
-    color: black;
-}
-
