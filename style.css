@@ -1,9 +1,27 @@
-body{
-    margin:0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh; 
-    background: url("https://media.istockphoto.com/id/1280649926/video/abstract-soft-shiny-background-business-motion-graphics-abstract-simple-beatiful-motion.jpg?s=640x640&k=20&c=JvWt3KjeQlt5jD_Q-PZeBdcRJORHtgLKSM-RfPtaYpM=");
-    background-size: cover;
+:root {
+  --background-url: url("https://media.istockphoto.com/id/1280649926/video/abstract-soft-shiny-background-business-motion-graphics-abstract-simple-beatiful-motion.jpg?s=640x640&k=20&c=JvWt3KjeQlt5jD_Q-PZeBdcRJORHtgLKSM-RfPtaYpM=");
+  --color-bg: #ffffff; /* light mode background */
+  --color-text: #000000; /* light mode text */
+}
+
+body * {
+  color: var(--color-text) !important;
+}
+
+.dark-theme {
+  --background-url: url("URL_OF_YOUR_DARK_THEME_BACKGROUND_IMAGE");
+  --color-bg: #000000; /* dark mode background */
+  --color-text: #ffffff; /* dark mode text */
+}
+
+body {
+  margin:0px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh; 
+  background: var(--background-url);
+  background-size: cover;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 /*Nav-bar*/
@@ -139,6 +157,7 @@ nav a:hover::before{
     background: repeating-linear-gradient(to right, black, black 10px, white 10px, white 20px);
     opacity: 20%;
 }
+
 
 li{
     list-style: none;

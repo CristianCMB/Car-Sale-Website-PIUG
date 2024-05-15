@@ -45,3 +45,7 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";
   }
 } 
+
+document.getElementById('theme-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');
+});
